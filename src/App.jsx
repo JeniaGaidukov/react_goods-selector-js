@@ -25,7 +25,7 @@ export const App = () => {
   return (
     <main className="section container">
       <h1 className="title is-flex is-align-items-center">
-        {initialValue ? `${initialValue} is selected` : 'No goods selected'}{' '}
+        {initialValue ? `${initialValue} is selected` : 'No goods selected'}
         {initialValue && (
           <button
             data-cy="ClearButton"
@@ -43,7 +43,7 @@ export const App = () => {
               data-cy="Good"
               key={good}
               className={classNames({
-                'has-background-success-light': setInitialValue === good,
+                'has-background-success-light': initialValue === good,
               })}
             >
               <td>
