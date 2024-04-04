@@ -19,7 +19,7 @@ export const goods = [
 export const App = () => {
   const [initialValue, setInitialValue] = useState('Jam');
   const removeGoods = () => {
-    setInitialValue(false);
+    setInitialValue('');
   };
 
   return (
